@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>ArtFight-Inspirado</title>
+  <title>Art Fight - Log In</title>
   <style>
     body {
       margin: 0;
@@ -25,8 +25,8 @@
     }
 
     .topbar .logo {
-      font-size: 1.6em;
-      font-weight: bold;
+      font-size: 1.2em;
+      font-weight: 300 bold;
       letter-spacing: 1px;
     }
 
@@ -64,17 +64,53 @@
     .topbar .links a:hover {
       color: rgba(250, 250, 250, 0.808);
     }
+
+    .banner {
+      background-attachment: scroll;
+      height: 200px;
+      background-position: top;
+      background-size: cover;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #e3e3e3;
+      text-align: left;
+      background-color: #222;
+    }
+
+    .alert-warning {
+      color: #f8e6cf;
+      background-color: #97580a;
+      border-color: #3e2404;
+    }
+
+    .alert {
+      position: relative;
+      padding: 1rem 1.5rem;
+      margin: 1rem auto;
+      border: 1px solid transparent;
+      border-radius: 0.2rem;
+      max-width: 1290px;
+    }
   </style>
 </head>
 <body>
 
   <div class="topbar">
     <div class="center-section">
-      <div class="logo">ART FIGHT</div>
+       <div class="logo">
+        <img src="https://artfight.net/favicon.svg" alt="ArtFight Ícone" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+        ART FIGHT
+      </div>
       <div class="extra-links">
-        <a href="https://discord.com" target="_blank">💬 Discord</a>
-        <a href="/help" target="_blank">❓ Help</a>
-        <a href="/shop" target="_blank">🛒 Shop</a>
+        <a href="https://discord.gg/artfight" target="_blank">💬 Discord</a>
+        <a href="/help" target="_blank">❓ Help 🠿</a>
+        <a href="/shop" target="_blank">🛒 Shop 🠿</a>
       </div>
     </div>
     <div class="links">
@@ -82,6 +118,7 @@
       <a href="https://artfight.net/login" target="_blank">Log In</a>
     </div>
   </div>
-
+  <div class="banner" style="background-image: url(https://artfight.net/images/default_banner.jpg);"></div>
+  <div class="alert alert-warning">Art Fight is currently in read-only mode. For more information, please view the latest newspost!</div>
 </body>
 </html>
