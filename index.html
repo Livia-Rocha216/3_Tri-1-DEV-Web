@@ -10,18 +10,43 @@
     }
 
     .topbar {
-      background-color: #222; /* fundo escuro */
-      color: #f0f0f0; /* texto claro */
+      background-color: #303030;
+      color: #f0f0f0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 12px 24px;
     }
 
+    .topbar .center-section {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
     .topbar .logo {
       font-size: 1.6em;
       font-weight: bold;
       letter-spacing: 1px;
+    }
+
+    .topbar .extra-links a {
+      color: rgba(250, 250, 250, 0.459);
+      text-decoration: none;
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s;
+    }
+
+    .topbar .extra-links a:hover {
+      color: rgba(250, 250, 250, 0.808);
+    }
+
+    .topbar .extra-links {
+      display: flex;
+      gap: 20px;
     }
 
     .topbar .links {
@@ -37,17 +62,24 @@
     }
 
     .topbar .links a:hover {
-      color: rgba(250, 250, 250, 0.808); /* destaque ao passar o mouse */
+      color: rgba(250, 250, 250, 0.808);
     }
   </style>
 </head>
 <body>
 
   <div class="topbar">
-    <div class="logo">ArtFight</div>
+    <div class="center-section">
+      <div class="logo">ART FIGHT</div>
+      <div class="extra-links">
+        <a href="https://discord.com" target="_blank">💬 Discord</a>
+        <a href="/help" target="_blank">❓ Help</a>
+        <a href="/shop" target="_blank">🛒 Shop</a>
+      </div>
+    </div>
     <div class="links">
-      <a href="#">Register</a>
-      <a href="#">Log In</a>
+      <a href="https://artfight.net/register">Register</a>
+      <a href="https://artfight.net/login" target="_blank">Log In</a>
     </div>
   </div>
 
